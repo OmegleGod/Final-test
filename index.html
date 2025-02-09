@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omegle God</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=AbF1gKj1EmgwX08xD70pIw7Z7GPHMioaCrySpw-4IJnXc9aK3e0v5xxvo6LfX93Qaex0VKr9hBUhAUvk"></script>
+</head>
+<body>
+    <header>
+        <h1>Omegle God</h1>
+    </header>
+    <main>
+        <section class="preview">
+            <h2>Preview</h2>
+            <video controls>
+                <source src="preview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="readme">
+            <h2>Monkey App</h2>
+            <p><!-- Add README content here --></p>
+        </section>
+        <div id="paypal-button-container"></div>
+    </div>
+      
+<script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '35.00'
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Payment successful! Your folder will be sent automatically.');
+                    window.location.href = "https://yoursite.com/access.html"; // Redirect to content
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #ff4500;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Container */
+main {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Preview Section */
+.preview {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 69, 0, 0.7);
+}
+
+.preview h2 {
+    color: #ffcc00;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* README Section */
+.readme {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.readme h2 {
+    color: #ffcc00;
+}
+
+/* PayPal Button */
+#paypal-button-container {
+    margin-top: 20px;
+    padding: 10px;
+}
